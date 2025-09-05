@@ -3,5 +3,6 @@
   { "name": "help wanted", "color": "0052cc", "description": "Extra help needed from the community" },
   { "name": "feature", "color": "ff7f0e", "description": "Requests for new features or enhancements" },
   { "name": "bug", "color": "d73a4a", "description": "Bug reports" },
-  { "name": "question", "color": "5319e7", "description": "Questions or clarifications" }
+  { "name": "question", "color": "5319e7", "description": "Questions or clarifications" },
+  { "name": "test label", "color": "000000", "description": "Test label" }
 ]
