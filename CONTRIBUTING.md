@@ -215,6 +215,38 @@ Before contributing, ensure you have:
 
 ---
 
+### Using Labels
+
+When opening an issue, please apply one of the predefined labels if appropriate:
+- **good first issue** – ideal for newcomers to the project
+- **help wanted** – maintainers welcome additional assistance
+- **feature** – new feature requests or enhancements
+- **bug** – report a bug
+- **question** – ask a question or clarification
+
+Proper use of labels helps maintainers prioritize and triage issues effectively.
+
+---
+
+### Automated Issue Labels
+
+This project uses an automated workflow to manage issue labels.  
+
+- All labels are defined in `.github/labels.json` with their name, color, and description.
+- A GitHub Action (`.github/workflows/labels.yml`) automatically syncs the labels to the repository whenever the JSON file is updated.
+- Contributors can propose new labels or changes by submitting a PR that updates `labels.json`.
+- Once the PR is merged, the workflow applies the changes automatically — no manual intervention is required.
+- This ensures that labels are consistent and version-controlled across the project.
+
+**Current labels include:**
+- `good first issue`
+- `help wanted`
+- `feature`
+- `bug`
+- `question`
+
+---
+
 ## Community
 
 - Be respectful and inclusive in all interactions

@@ -1,0 +1,17 @@
+name: Sync Labels
+
+on:
+  push:
+    paths:
+      - '.github/labels.json'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Sync Labels
+        uses: actions-ecosystem/action-label-sync@v1
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          configuration-path: ".github/labels.json"
