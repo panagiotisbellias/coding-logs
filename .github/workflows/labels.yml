@@ -13,7 +13,13 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Sync Labels
-        uses: peter-evans/create-or-update-labels@v1
+        uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          labels-file: .github/labels.json
+          branch: label-sync
+          title: 'Sync labels from labels.json'
+          body: 'This PR updates the labels based on the latest labels.json file.'
+          committer: 'GitHub Actions <actions@github.com>'
+          author: 'GitHub Actions <actions@github.com>'
+          paths: |
+            .github/labels.json
