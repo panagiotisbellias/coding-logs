@@ -202,11 +202,16 @@ Before contributing, ensure you have:
 
 ## Reporting Issues
 
-- Search the [issue tracker](https://github.com/EscamillaJuan/coding-logs/issues) to avoid duplicates
-- Include:
+- Before opening a new issue, search the [issue tracker](https://github.com/EscamillaJuan/coding-logs/issues) to avoid duplicates.
+- Use the provided **issue templates** when creating new issues. Templates are automatically displayed when you click **“New Issue”**:
+  - **Bug Report** – for reporting problems or unexpected behavior.
+  - **Feature Request** – for suggesting new features or improvements.
+  - **Question** – for general usage or implementation questions.
+- Follow the instructions in the selected template and provide all requested details, such as:
   - Steps to reproduce
   - Expected vs actual behavior
-  - Environment details (Node.js version, OS, etc.)
+  - Environment information (Node.js version, OS, VS Code version, etc.)
+- Properly filled templates help maintainers quickly understand and address your issue.
 
 ---
 
