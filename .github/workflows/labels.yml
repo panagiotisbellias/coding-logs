@@ -10,8 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
       - name: Sync Labels
-        uses: actions-ecosystem/action-label-sync@v1
+        uses: peter-evans/create-or-update-label@v2
         with:
-          repo-token: "${{ secrets.GITHUB_TOKEN }}"
-          configuration-path: ".github/labels.json"
+          token: ${{ secrets.GITHUB_TOKEN }}
+          repository: ${{ github.repository }}
+          labels-file: .github/labels.json
