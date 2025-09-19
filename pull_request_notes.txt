@@ -1,0 +1,43 @@
+## Suggestion: Roadmap via Milestones & Issues (PR-Friendly)
+
+To create a roadmap that can be **reviewed and merged via PR**, we can use **issues and milestones** instead of a project board.  
+This approach allows maintainers to approve the roadmap before it becomes visible in the upstream repository.
+
+---
+
+### Steps to Implement (PR-Friendly)
+
+1. **Create a roadmap file in your fork**  
+   - Example: `roadmap.md`  
+   - Document upcoming features and improvements, including tentative priorities and descriptions.
+
+2. **Create issues for upcoming features**  
+   - Use your fork to pre-create issues for planned features.  
+   - Assign labels like `feature`, `planned`, `good first issue` to standardize management.
+
+3. **Assign milestones to issues**  
+   - Group related features under milestones (e.g., `v1.1`, `v1.2`).  
+   - This allows contributors to see which features are targeted for upcoming releases.
+
+4. **Submit a PR with the roadmap file and optionally issue references**  
+   - Include links to issues in the `roadmap.md` file.  
+   - Upstream maintainers can **review the roadmap content**, labels, and milestone assignments.  
+
+5. **Maintain the roadmap via PRs**  
+   - Future updates to the roadmap or milestones are done via PRs, ensuring review and approval before changes are applied upstream.
+
+---
+
+### Advantages
+
+- Fully **reviewable via PR**.  
+- Keeps all roadmap information **version-controlled**.  
+- Contributors can track features and progress using issues and milestones.  
+- Compatible with existing labels and contribution guidelines.
+
+---
+
+**References / Links**
+
+- [GitHub Issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues)
+- [GitHub Milestones](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-milestones)
